@@ -15,7 +15,9 @@ NOTE: In the future the following options will be enabled:
 
 # To Run
 
+```
 data_science_workflow> python run/run_workflow.py
+```
 
 # Future Improvements
 
