@@ -36,7 +36,7 @@ if __name__ == "__main__":
         workflow = LocalParallelWorkflow(ConfigParser())
     elif PARALLEL_MECHANISM == "ray":
         # Need to pass working directory here otherwise ray will not know where
-        # the workflow folder resides, per https://stackoverflow.com/a/70717760/8925915
+        # the "workflow" folder resides, per https://stackoverflow.com/a/70717760/8925915
         workflow = RayWorkflow(ConfigParser(), working_dir=path)
     # elif PARALLEL_MECHANISM == "spark":
     #     workflow = SparkWorkflow(ConfigParser())
